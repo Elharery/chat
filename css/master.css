@@ -26,7 +26,7 @@ background-color: lightslategray;
 @media (max-width:767px){
     .big-bos{
         flex-direction: column;
-        width: 400px !important;
+        width: 285px !important;
     }
     .up{
         margin: 5% 0;
