@@ -1,0 +1,228 @@
+*{
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: lightslategray;
+}
+.chater:not(:last-child):hover{
+    background-color: deepskyblue;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.big-bos{
+    background: white;
+    width: 700px;
+    display: flex;
+    margin: 200px auto;
+    border-radius: 10px;
+}
+@media (max-width:767px){
+    .big-bos{
+        flex-direction: column;
+        width: 400px !important;
+    }
+    .up{
+        margin: 5% 0;
+    }
+    .hide-phone{
+        width: 50%;
+        height: 2px;
+        background-color: #eee;
+        display: block !important;
+        margin: 15px auto;
+    }
+    .head{
+        justify-content: space-between;
+    }
+}
+.hide-phone{
+    display: none;
+}
+.big-bos .people{
+        border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+.big-bos .people .head {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-left: 5px;
+    padding-bottom: 10px;
+}
+.big-bos .people .head i{
+    background: deepskyblue;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+}
+.big-bos .people input.search{
+    background: gainsboro;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 10px;
+
+}
+.big-bos .people h4{
+    padding-bottom: 5px;
+}
+.history{
+        position: absolute;
+    top: 15px;
+    right: 5px;
+    font-size: 12px;
+}
+.big-bos .people .chater{
+    margin: 0 -20px 5px 5px;
+}
+.big-bos .people .chater:not(:last-child){
+    border-bottom: 1px solid #ccc;
+}
+.big-bos .people .img img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.big-bos .people .chater{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+/* .big-bos .people .chater .name-his{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+} */
+.big-bos .people .chater .name-his h4{
+    font-size: 14px;
+}
+.big-bos .people .chater .paragraph{
+    font-size: 13px;
+}
+.big-bos .people .chater .name-his .history{
+    font-size: 12px;
+}
+.big-bos .people .chater .history,
+.big-bos .people .chater .paragraph{
+    color: gray;
+}
+.big-bos .people .chater.now{
+background-color: deepskyblue;
+border-radius: 10px;
+
+}
+.big-bos .people .chater.now .white{
+    color: #fff;
+} 
+/* statrt left */
+.chat{
+    width:100%;
+}
+.chat:not(:last-child):hover{
+    background-color: deepskyblue;
+}
+.chat .up{
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 6%;
+}
+.chat > div > .to-color {
+    color: gray;
+    font-size: 13px;
+}
+.chat .line{
+    font-size: 13px;
+    color: gray;
+    margin: 0 auto;
+    width: fit-content;
+    display: block;
+    position: relative;
+} 
+.chat .line::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: #eee;
+    bottom: 6px;
+    left: -60px;
+}
+.chat .line::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: #eee;
+    bottom: 6px;
+    right: -60px;
+}
+.chat .left{
+    width: fit-content;
+    font-size: 15px;
+    color: #fff;
+    background-color: deepskyblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0 20px 10px;
+    position: relative;
+}
+.chat .left::before{
+    content: '';
+    position: absolute;
+    border: 5px solid transparent;
+    border-right: 5px solid deepskyblue;
+    left: 0;
+    top: 50%;
+    transform: translate(-100%,-50%);
+}
+.chat .right{
+    width: fit-content;
+    font-size: 15px;
+    color: #fff;
+    background-color: #eee;
+    color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 10px 5px 0;
+    position: relative;
+}
+.answer{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.answer::before{
+    content: '';
+    position: absolute;
+    border: 5px solid transparent;
+    border-left: 5px solid #eee;
+    top: 50%;
+    right: 1px;
+}
+.footer{
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 0 10px 10px;
+}
+.footer > div{
+    display: flex;
+    justify-content: space-between;
+}
+.footer i{
+    color: gray;
+    font-weight: 600;
+    padding-left: 5px;
+    cursor: pointer;
+}
